@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#map-container {
+    margin-bottom: 20px;
+}
+
+#map {
+    height: 500px; /* You can adjust this */
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#trip-selector-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#trip-selector {
+    padding: 8px;
+    font-size: 1em;
+    border-radius: 4px;
+}
+
+#story-display {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#story-display h3 {
+    margin-top: 0;
+    color: #555;
+}
+
+#story-display img {
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+#close-story {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#close-story:hover {
+    background-color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+}
+
+/* Leaflet popup customization (optional) */
+.leaflet-popup-content-wrapper {
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+.leaflet-popup-content {
+    font-size: 0.9em;
+}
+.leaflet-popup-content h4 { /* For popup titles */
+    margin: 0 0 5px 0;
+    font-size: 1.1em;
+}
+.leaflet-popup-content img {
+    max-width: 150px; /* Adjust as needed for images in popups */
+    height: auto;
+    margin-top: 5px;
+    border-radius: 3px;
+}

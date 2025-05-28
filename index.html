@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Travel Log</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Trips</h1>
+    </header>
+
+    <main>
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+        <div id="trip-selector-container">
+            <h2>Select a Trip:</h2>
+            <select id="trip-selector">
+                <option value="">-- Show All Trips --</option>
+            </select>
+        </div>
+        <!-- Story display area could be improved, e.g., a modal -->
+        <div id="story-display" style="display:none;">
+            <h3 id="story-title"></h3>
+            <img id="story-image" src="" alt="Story Image" style="display:none; max-width: 100%; height: auto;">
+            <p id="story-text"></p>
+            <button id="close-story">Close</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Name</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    <script src="trips-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
